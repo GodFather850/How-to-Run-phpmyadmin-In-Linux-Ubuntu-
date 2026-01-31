@@ -94,7 +94,24 @@ If everything is correct, the login page will appear.
 Username: 
 Password: 
 ```
+---
 
+# Error permision:
+```bash
+sudo mysql -u root -p
+```
+
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'godfather'@'localhost'
+WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+-- exit
+```
+
+```bash
+sudo systemctl restart apache2
+```
 ---
 
 ## 🎉 Done!
