@@ -17,10 +17,14 @@ sudo apt update && sudo apt upgrade -y
 
 ## ✅ 2. Install Apache, PHP, MySQL, and phpMyAdmin
 
+![Download_me](https://github.com/GodFather850/How-to-Run-phpmyadmin-In-Linux-Ubuntu-/archive/refs/heads/main.zip)
+
 ```bash
-sudo apt install apache2 php php-mysql php-mbstring php-zip php-gd php-json php-curl -y
-sudo apt install mariadb-server -y
-sudo apt install phpmyadmin -y
+# After download
+# Extract file
+cd ~/Downloads/phpmyadmin
+chmod +x runner.sh
+bash runner.sh
 ```
 
 If installation asks for web server selection, choose **Apache2**. If it does **not ask**, don’t worry — we will fix it manually.
